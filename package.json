@@ -1,0 +1,20 @@
+{
+  "name": "nfl-test",
+  "version": "1.0.0",
+  "description": "NFLTOS is a comprehensive platform designed to maximize profitability in NFL Daily Fantasy Sports tournaments. It integrates advanced mathematical frameworks (Game Theory Optimization, Modern Portfolio Theory, Bayesian inference, simulation-based evaluation, and quantitative leverage identification) to create and deploy optimal lineup portfolios.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thekid1101/NFL-TEST.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thekid1101/NFL-TEST/issues"
+  },
+  "homepage": "https://github.com/thekid1101/NFL-TEST#readme"
+}
