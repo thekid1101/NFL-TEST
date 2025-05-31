@@ -19,6 +19,11 @@
     "url": "https://github.com/thekid1101/NFL-TEST/issues"
   },
   "homepage": "https://github.com/thekid1101/NFL-TEST#readme",
+  "workspaces": [
+    "backend/*",
+    "frontend",
+    "shared"
+  ],
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^8.33.0",
     "@typescript-eslint/parser": "^8.33.0",
