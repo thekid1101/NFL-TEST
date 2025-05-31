@@ -1,0 +1,77 @@
+version: '3.8'
+services:
+  data-service:
+    build:
+      context: ./backend/data-service
+    container_name: data-service
+    restart: unless-stopped
+    ports:
+      - "4001:4000"
+    env_file:
+      - .env
+    networks:
+      - nfltos
+
+  projection-service:
+    build:
+      context: ./backend/projection-service
+    container_name: projection-service
+    restart: unless-stopped
+    ports:
+      - "4002:4000"
+    env_file:
+      - .env
+    networks:
+      - nfltos
+
+  simulation-service:
+    build:
+      context: ./backend/simulation-service
+    container_name: simulation-service
+    restart: unless-stopped
+    ports:
+      - "4003:4000"
+    env_file:
+      - .env
+    networks:
+      - nfltos
+
+  optimization-service:
+    build:
+      context: ./backend/optimization-service
+    container_name: optimization-service
+    restart: unless-stopped
+    ports:
+      - "4004:4000"
+    env_file:
+      - .env
+    networks:
+      - nfltos
+
+  contest-service:
+    build:
+      context: ./backend/contest-service
+    container_name: contest-service
+    restart: unless-stopped
+    ports:
+      - "4005:4000"
+    env_file:
+      - .env
+    networks:
+      - nfltos
+
+  frontend:
+    build:
+      context: ./frontend
+    container_name: frontend
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    networks:
+      - nfltos
+
+networks:
+  nfltos:
+    driver: bridge 
